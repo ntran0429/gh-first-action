@@ -1,0 +1,10 @@
+name: First Workflow
+on: workflow_dispatch # define the event that triggers this workflow
+jobs: # define jobs below
+  first-job: # deine a job's name here
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!" # use the 'run' key to define a command to run in the CLI
+      - name: Print goodbye
+        run: echo "Done - bye!"
